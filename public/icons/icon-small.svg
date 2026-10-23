@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Simplified for 16/32 px: fuller ribbon, single bold tree -->
+  <path d="M7 2h18a2 2 0 0 1 2 2v26l-11-6.5L5 30V4a2 2 0 0 1 2-2z" fill="#22694C"/>
+  <path d="M16 6l5.5 7H18l4.5 6h-13L14 13h-3.5z" fill="#E9F7EE"/>
+  <rect x="14.6" y="19" width="2.8" height="3" fill="#E9F7EE"/>
+</svg>

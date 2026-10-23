@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Privacy question or private matter
+    url: mailto:contact@brightarcadia.com
+    about: Please email instead of opening a public issue.
+  - name: Support and troubleshooting guide
+    url: https://github.com/reza-ghazi/linkspruce/blob/main/SUPPORT.md
+    about: Common questions and fixes.

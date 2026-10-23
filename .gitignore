@@ -1,0 +1,11 @@
+node_modules/
+dist/
+release/
+private/
+coverage/
+test-results/
+playwright-report/
+.e2e-profile*/
+*.log
+.env*
+dist-e2e/

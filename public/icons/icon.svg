@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2E7D5B"/>
+      <stop offset="1" stop-color="#1A5640"/>
+    </linearGradient>
+  </defs>
+  <!-- Bookmark ribbon (artwork kept inside the 96x96 safe area) -->
+  <path d="M38 16h52a8 8 0 0 1 8 8v88l-34-20-34 20V24a8 8 0 0 1 8-8z" fill="url(#g)"/>
+  <!-- Spruce: three tiers and a trunk -->
+  <g fill="#E9F7EE">
+    <path d="M64 27 79 46H70l12 15H72l13 16H43l13-16H46l12-15h-9z"/>
+    <rect x="60" y="77" width="8" height="7" rx="1.5"/>
+  </g>
+</svg>

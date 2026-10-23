@@ -1,0 +1,86 @@
+name: Bug report
+description: Report a reproducible problem with LinkSpruce
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve LinkSpruce. **Do not include private bookmark titles or URLs, passwords, API keys, or other sensitive information.**
+  - type: input
+    id: extension-version
+    attributes:
+      label: LinkSpruce version
+      placeholder: "For example: 1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: chrome-version
+    attributes:
+      label: Chrome version
+      description: Open chrome://settings/help to find the complete version number.
+    validations:
+      required: true
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: Operating system
+      options: [Windows, macOS, Linux, ChromeOS, Other]
+    validations:
+      required: true
+  - type: dropdown
+    id: feature
+    attributes:
+      label: Feature
+      options:
+        - Link health check
+        - Duplicates review
+        - Taxonomy discovery / editing
+        - Categorization
+        - Organization preview / apply
+        - Auto-filing new bookmarks
+        - Undo / backup / restore
+        - On-device AI
+        - Gemini (cloud) AI
+        - Popup / dashboard UI
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: library-size
+    attributes:
+      label: Approximate number of bookmarks
+      placeholder: "For example: 5,000"
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the dashboard ...
+        2. Click ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Non-sensitive details only (error messages, screenshots with private data removed).
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmation
+      options:
+        - label: I removed private bookmark titles, URLs and any API keys from this report.
+          required: true

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="280" viewBox="0 0 440 280">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1F6B4D"/><stop offset="1" stop-color="#0F3D2C"/></linearGradient>
+    <linearGradient id="rib" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3C9A70"/><stop offset="1" stop-color="#22694C"/></linearGradient>
+  </defs>
+  <rect width="440" height="280" fill="url(#bg)"/>
+  <!-- scattered small bookmark ribbons (clutter) on the left, tidy rows on the right -->
+  <g fill="#ffffff" opacity=".14">
+    <path d="M40 40h18v30l-9-6-9 6z" transform="rotate(-18 49 55)"/>
+    <path d="M80 190h18v30l-9-6-9 6z" transform="rotate(22 89 205)"/>
+    <path d="M30 130h18v30l-9-6-9 6z" transform="rotate(8 39 145)"/>
+    <path d="M110 60h18v30l-9-6-9 6z" transform="rotate(35 119 75)"/>
+  </g>
+  <g fill="#E9F7EE" opacity=".22">
+    <rect x="300" y="70" width="110" height="12" rx="6"/><rect x="300" y="100" width="90" height="12" rx="6"/>
+    <rect x="300" y="130" width="110" height="12" rx="6"/><rect x="300" y="160" width="70" height="12" rx="6"/>
+    <rect x="300" y="190" width="100" height="12" rx="6"/>
+  </g>
+  <g transform="translate(160 40)">
+    <path d="M22 0h76a12 12 0 0 1 12 12v188l-50-30-50 30V12A12 12 0 0 1 22 0z" fill="url(#rib)" stroke="#E9F7EE" stroke-opacity=".35" stroke-width="2"/>
+    <g fill="#E9F7EE"><path d="M60 22l23 29H70l18 22H73l20 25H27l20-25H32l18-22H37z"/><rect x="54" y="98" width="12" height="11" rx="2"/></g>
+  </g>
+</svg>

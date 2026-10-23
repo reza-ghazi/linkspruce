@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LinkSpruce Dashboard</title>
+  <link rel="icon" href="icons/icon-32.png">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="shell">
+    <header class="topbar">
+      <img src="icons/icon-48.png" alt="" width="28" height="28">
+      <div class="brand"><strong>LinkSpruce</strong><span>Less clutter. Better bookmarks.</span></div>
+      <div id="topbar-status" class="topbar-status" aria-live="polite"></div>
+    </header>
+    <nav class="sidenav" aria-label="Sections">
+      <a href="#overview" data-section="overview">Overview &amp; Link Health</a>
+      <a href="#duplicates" data-section="duplicates">Duplicates Review</a>
+      <a href="#organize" data-section="organize">Organization Preview</a>
+      <a href="#activity" data-section="activity">Auto-filing Activity</a>
+      <a href="#backup" data-section="backup">Backup &amp; Restore</a>
+      <a href="#settings" data-section="settings">Settings &amp; Privacy</a>
+      <a class="nav-external" href="https://github.com/reza-ghazi/linkspruce/blob/main/SUPPORT.md" target="_blank" rel="noopener noreferrer">Help &amp; support ↗</a>
+    </nav>
+    <main id="main" tabindex="-1"></main>
+  </div>
+  <script type="module" src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "LinkSpruce \u2014 Bookmark Cleaner & Organizer",
+  "short_name": "LinkSpruce",
+  "version": "0.0.0",
+  "description": "Less clutter. Better bookmarks. Find broken links and duplicates, and organize bookmarks with local or optional AI help.",
+  "homepage_url": "https://github.com/reza-ghazi/linkspruce",
+  "minimum_chrome_version": "134",
+  "permissions": [
+    "bookmarks",
+    "storage",
+    "unlimitedStorage",
+    "alarms"
+  ],
+  "optional_host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "LinkSpruce",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png"
+    }
+  },
+  "options_ui": {
+    "page": "dashboard.html#settings",
+    "open_in_tab": true
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https: http:; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'"
+  }
+}
