@@ -1,6 +1,8 @@
 # Changelog
 
-## 1.0.0 — unreleased (prepared 2026-10-22)
+## 1.0.0 — 2026-10-25
+
+Published on the Chrome Web Store (item `fjcgjgpjfdkafoeelblhdppahkaikbnl`; submitted 2026-10-22).
 
 First release.
 

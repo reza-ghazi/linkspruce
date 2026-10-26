@@ -12,7 +12,7 @@ Environment: Fedora 44, Node 22.23.1, Chromium 156.0.8078.4 (Playwright 1.64.1, 
 | `npm run test:e2e` | **10 passed**, 2 opt-in skipped (scale, screenshots). One intermittent failure of the 21-case fixture-matrix test was seen in 1 of 6 runs and could not be reproduced in 5 reruns; under investigation. |
 | `SCALE=1 npx playwright test tests/e2e/scale.spec.ts` | **passed** (25,000 bookmarks; see below) |
 | `SHOTS=1 npx playwright test tests/e2e/screenshots.spec.ts` | passed (5 screenshots) |
-| `npm run package` | audit passed; `release/linkspruce-1.0.0.zip`, 123,586 bytes, SHA-256 `899f12e9acd58b4ff3a43680be00280c5d229a5d764bbed5b244443e052feb5f` |
+| `npm run package` | audit passed; `release/linkspruce-1.0.0.zip`, 123,874 bytes, SHA-256 902f19133eb5bca9ed9ca70539fd45c70bca6e595190aa051afba2907ba61444, reproducible, commit 0aaf11b |
 
 ## Coverage by category
 
@@ -44,6 +44,6 @@ Performance defects found by the first scale run and fixed: quadratic own-operat
 ## Not yet validated live
 
 - **On-device AI (Gemini Nano) on real hardware**: Chromium reports `unavailable` (no model component). Logic is covered with a mocked `LanguageModel`; a live check needs branded Chrome with the model downloaded on a supported device.
-- **Gemini API live call**: requires a user-supplied key for a (tiny) paid/free-tier request.
+- **Gemini API live call**: requires a user-supplied key.
 - **Classification accuracy**: not yet measured; requires human review of a stratified sample.
 - **Branded Chrome manual load**: `dist/` should be loaded once via chrome://extensions in a fresh profile (branded Chrome ignores `--load-extension`, so this is a manual check).

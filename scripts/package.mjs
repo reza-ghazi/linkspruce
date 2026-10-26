@@ -1,7 +1,7 @@
 // Package dist/ into a clean, versioned Chrome Web Store ZIP with checksums and a content audit.
 import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
-import { mkdirSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, readdirSync, rmSync, statSync, utimesSync, writeFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
 
 const root = process.cwd();
@@ -42,8 +42,11 @@ mkdirSync(join(root, 'release'), { recursive: true });
 const zipName = `linkspruce-${pkg.version}.zip`;
 const zipPath = join(root, 'release', zipName);
 rmSync(zipPath, { force: true });
-// Deterministic-ish ordering; -X drops extra file attributes.
-execFileSync('zip', ['-X', '-q', '-r', zipPath, ...files.sort()], { cwd: dist });
+// Reproducible archive: fixed entry order, no extra attributes, and timestamps pinned to
+// SOURCE_DATE_EPOCH (default: last git commit time) so identical sources give identical bytes.
+const epoch = Number(process.env.SOURCE_DATE_EPOCH ?? execFileSync('git', ['log', '-1', '--format=%ct']).toString().trim());
+for (const f of files) utimesSync(join(dist, f), epoch, epoch);
+execFileSync('zip', ['-X', '-q', '-D', zipPath, ...files.sort()], { cwd: dist, env: { ...process.env, TZ: 'UTC' } });
 const sha = createHash('sha256').update(readFileSync(zipPath)).digest('hex');
 const fileHashes = files.sort().map((f) => `${createHash('sha256').update(readFileSync(join(dist, f))).digest('hex')}  ${f}`);
 writeFileSync(join(root, 'release', `${zipName}.sha256`), `${sha}  ${zipName}\n`);

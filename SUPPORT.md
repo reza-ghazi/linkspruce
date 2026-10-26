@@ -1,6 +1,6 @@
 # LinkSpruce Support
 
-Thank you for using **LinkSpruce — Bookmark Cleaner & Organizer**.
+Thank you for using **LinkSpruce — Bookmark Cleaner & Organizer** ([Chrome Web Store](https://chromewebstore.google.com/detail/linkspruce/fjcgjgpjfdkafoeelblhdppahkaikbnl)).
 
 ## Quick help
 

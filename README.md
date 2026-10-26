@@ -4,6 +4,8 @@
 
 **Less clutter. Better bookmarks.**
 
+[![Available in the Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Install%20LinkSpruce-22694c?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/linkspruce/fjcgjgpjfdkafoeelblhdppahkaikbnl)
+
 LinkSpruce is a local-first Chrome extension that finds broken links and duplicate bookmarks, discovers a category structure from **your own** bookmarks, and organizes them — with a preview, a verified backup snapshot and one-click undo for every bulk change. Newly saved bookmarks can be filed automatically once you turn that on.
 
 LinkSpruce has no account, no analytics, no advertising and no developer-controlled server.
@@ -33,7 +35,7 @@ Verified snapshots before bulk changes, JSON backup downloads, restores into a n
 ## Install
 
 ### Chrome Web Store
-Coming soon — the store link will be added here after review.
+[Install LinkSpruce from the Chrome Web Store](https://chromewebstore.google.com/detail/linkspruce/fjcgjgpjfdkafoeelblhdppahkaikbnl)
 
 ### From source
 ```bash
